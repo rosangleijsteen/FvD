@@ -2,26 +2,81 @@
 
 /* FONTS */
 @font-face {
-	font-family: 'eenfont';
-	src: url('../fonts/eenfont.woff2') format('woff2'),
-			 url('../fonts/eenfont.woff') format('woff');
-	font-weight: normal;
-	font-style: normal;
+    font-family: 'eenfont';
+    src: url('../fonts/eenfont.woff2') format('woff2'),
+        url('../fonts/eenfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+
+@font-face {
+    font-family: 'legothictype';
+    src: url('legothick-webfont.woff2') format('woff2'),
+        url('legothick-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
 
 }
 
 
 /* ALGEMENE STYLING */
-*, *::after, *::before {
-  box-sizing:border-box;  
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+}
+
+
+html,
+body {
+    position: relative;
+    height: 100%;
+    margin: 0;
+}
+
+
+body {
+    font-family: eenfont, sans-serif;
+    color: #111;
+
 }
 
 body {
-  font-family:eenfont, sans-serif;
-  color:#111;
-  background-color:#eee;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.lego {
+    padding: 3em;
+    margin: 1.5em;
+    border-style: solid;
+    border-color: black;
+    background-color: red;
+    font-family: legothictype;
+    font color: yellow;
+    font-size: 3vw;
 }
 
 
-/* BRAND STYLING */
 
+
+.fedex {
+    font-family: futura-pt-bold, sans-serif;
+    font-weight: 700;
+    font-style: normal;
+    padding: 3em 4.2em 3em 4.2em;
+    margin: 1.5em;
+    border-style: solid;
+    border-color: black;
+    background-color: burlywood;
+    letter-spacing: -.26em;
+    color: darkblue;
+    font-size: 3vw;
+}
+
+.oranje {
+    color: coral;
+}
