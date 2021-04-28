@@ -12,8 +12,8 @@
 
 @font-face {
     font-family: 'legothictype';
-    src: url('legothick-webfont.woff2') format('woff2'),
-        url('legothick-webfont.woff') format('woff');
+    src: url('../fonts/legothick-webfont.woff2') format('woff2'),
+        url('../fonts/legothick-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -49,19 +49,61 @@ body {
 
 }
 
-.lego {
-    padding: 3em;
+/* LEGO */
+
+/*.lego {
+    padding: 3em 4.2em 3em 4.2em;
+    letter-spacing: -.36em;
     margin: 1.5em;
     border-style: solid;
     border-color: black;
     background-color: red;
-    font-family: legothictype;
-    font color: yellow;
+    font-family: legothictype, sans-serif;
     font-size: 3vw;
+    color: black;
+    text-shadow: -1px 0 yellow, 0 1px yellow, 1px 0 yellow, 0 -1px yellow;
+}*/
+
+.legotekst {
+    display: none;
+}
+
+::before {
+    /* jouw code hier */
+    content: " ";
+    width: .5em;
+    height: .5em;
+    color: yellow;
+    top: -1;
+}
+
+
+.legoblok {
+    width: 1em;
+    height: 2em;
+    position: relative;
+    animation-name: blokje;
+    animation-duration: 4s;
+    margin: 3em;
+}
+
+@keyframes blokje {
+    0% {
+        background-color: red;
+        left: 0em;
+        top: 0em;
+    }
+
+    100% {
+        background-color: green;
+        left: 0pem;
+        top: 10em;
+    }
 }
 
 
 
+/* FEDEX */
 
 .fedex {
     font-family: futura-pt-bold, sans-serif;
